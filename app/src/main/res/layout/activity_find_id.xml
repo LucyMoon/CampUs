@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FindIdActivity">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="kr.hs.dgsw.campus.FindIdActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="로고"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/FindId_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디 찾기"
+            android:textStyle="bold"
+            android:textColor="@color/ButtonOrange"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Logo" />
+
+        <ImageView
+            android:id="@+id/PhoneIcon"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/phoneicon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/FindId_text" />
+
+        <TextView
+            android:id="@+id/Phone_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="휴대전화번호"
+            android:textColor="@color/TextGray"
+            app:layout_constraintBottom_toBottomOf="@id/PhoneIcon"
+            app:layout_constraintLeft_toRightOf="@id/PhoneIcon"
+            app:layout_constraintTop_toTopOf="@id/PhoneIcon" />
+
+        <EditText
+            android:singleLine="true"
+            android:gravity="center"
+            android:id="@+id/Phone_ET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/ButtonOrange"
+            android:layout_marginHorizontal="65dp"
+            android:layout_marginTop="30dp"
+            android:hint="휴대전화번호를 - 없이 입력해 주세요."
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Phone_Text" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Phone_Check_Btn"
+            app:layout_constraintDimensionRatio="h,1:1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_orange_button_check"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:textSize="8sp"
+            android:text="인증하기"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/Phone_ET"
+            app:layout_constraintTop_toTopOf="@id/Phone_ET"
+            app:layout_constraintBottom_toBottomOf="@id/Phone_ET"/>
+
+        <ImageView
+            android:id="@+id/MailIcon"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/mailicon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Phone_ET" />
+
+        <TextView
+            android:id="@+id/Mail_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="인증번호 입력"
+            android:textColor="@color/TextGray"
+            app:layout_constraintBottom_toBottomOf="@id/MailIcon"
+            app:layout_constraintLeft_toRightOf="@id/MailIcon"
+            app:layout_constraintTop_toTopOf="@id/MailIcon" />
+
+        <EditText
+            android:singleLine="true"
+            android:gravity="center"
+            android:id="@+id/Mail_ET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/ButtonOrange"
+            android:layout_marginHorizontal="65dp"
+            android:layout_marginTop="30dp"
+            android:hint="인증번호를 입력해 주세요."
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Mail_Text" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Mail_Check_Btn"
+            app:layout_constraintDimensionRatio="h,1:1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_orange_button_check"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:textSize="8sp"
+            android:text="확인하기"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/Mail_ET"
+            app:layout_constraintTop_toTopOf="@id/Mail_ET"
+            app:layout_constraintBottom_toBottomOf="@id/Mail_ET"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Next_Btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/round_orange_button_full"
+            android:text="다음으로"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
