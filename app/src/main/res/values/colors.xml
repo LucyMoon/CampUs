@@ -10,4 +10,5 @@
     <color name="EditTextOrange">#ED9746</color>
     <color name="TextGray">#727272</color>
     <color name="ButtonOrange">#FFAA5B</color>
+    <color name="Gray">#b4b4b4</color>
 </resources>

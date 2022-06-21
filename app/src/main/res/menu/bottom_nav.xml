@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Action_Rental"
+        android:title="대여"
+        android:icon="@drawable/tent"/>
+    <item android:id="@+id/Action_Like"
+        android:title="관심"
+        android:icon="@drawable/like"/>
+    <item android:id="@+id/Action_Home"
+        android:title="홈"
+        android:icon="@drawable/home"/>
+    <item android:id="@+id/Action_Message"
+        android:title="메시지"
+        android:icon="@drawable/comment"/>
+    <item android:id="@+id/Action_Profile"
+        android:title="프로필"
+        android:icon="@drawable/account"/>
+</menu>

@@ -38,7 +38,8 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             binding.FindPw -> {
-
+                val intent = Intent(this, FindPwActivity::class.java)
+                startActivity(intent)
             }
         }
     }
